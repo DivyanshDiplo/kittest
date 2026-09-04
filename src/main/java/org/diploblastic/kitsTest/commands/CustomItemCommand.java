@@ -1,6 +1,7 @@
 package org.diploblastic.kitsTest.commands;
 
 import org.bukkit.ChatColor;
+import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -41,6 +42,7 @@ public class CustomItemCommand implements CommandExecutor, TabCompleter {
 
         Player player = (Player) sender;
         player.getInventory().addItem(item.createItemStack());
+        player.playSound(player.getLocation(), Sound.BURP, 1.0f, 1.0f);
         sender.sendMessage(ChatColor.GREEN + "You received a custom item.");
         return true;
     }
