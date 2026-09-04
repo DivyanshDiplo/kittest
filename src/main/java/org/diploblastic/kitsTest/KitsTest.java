@@ -25,6 +25,7 @@ public final class KitsTest extends JavaPlugin {
         CustomItemCommand customItemCommand = new CustomItemCommand(registry);
         getCommand("customitem").setExecutor(customItemCommand);
         getCommand("customitem").setTabCompleter(customItemCommand);
+        getLogger().info("hello, black people are allowed");
     }
 
     @Override

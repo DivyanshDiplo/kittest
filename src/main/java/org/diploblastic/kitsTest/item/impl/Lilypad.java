@@ -23,4 +23,9 @@ public class Lilypad extends CustomItem {
     public void onRightClick(Player player) {
         player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, DURATION_TICKS, JUMP_AMPLIFIER));
     }
+
+    @Override
+    public void onLeftClick(Player player){
+
+    }
 }

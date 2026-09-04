@@ -21,7 +21,11 @@ public class Feather extends CustomItem {
 
     @Override
     public void onRightClick(Player player) {
-
         player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, DURATION_TICKS, SPEED_AMPLIFIER));
+    }
+
+    @Override
+    public void onLeftClick(Player player) {
+
     }
 }
