@@ -30,7 +30,7 @@ public class CustomItemCommand implements CommandExecutor, TabCompleter {
         }
 
         if (args.length != 1) {
-            sender.sendMessage(ChatColor.RED + "Usage: /customitem <" + String.join("|", registry.getIds()) + ">");
+            sender.sendMessage(ChatColor.RED + "Usage: /customitem <" + String.join(",", registry.getIds()) + ">");
             return true;
         }
 

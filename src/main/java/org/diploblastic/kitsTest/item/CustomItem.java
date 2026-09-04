@@ -37,7 +37,5 @@ public abstract class CustomItem {
 
     public abstract void onRightClick(Player player);
 
-    public void onLeftClick(Player player) {
-        // no-op by default
-    }
+    public abstract void onLeftClick(Player player);
 }
