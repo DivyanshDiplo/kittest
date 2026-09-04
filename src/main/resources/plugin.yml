@@ -1,0 +1,4 @@
+name: KitsTest
+version: '${version}'
+
+main: org.diploblastic.kitsTest.KitsTest
