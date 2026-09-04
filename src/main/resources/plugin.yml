@@ -2,3 +2,8 @@ name: KitsTest
 version: '${version}'
 
 main: org.diploblastic.kitsTest.KitsTest
+
+commands:
+  customitem:
+    description: Gives a custom item for testing.
+    usage: /customitem <item>
